@@ -22,7 +22,7 @@ This mini project serves as an introduction into:
 
 ## Progress
 
-Planning (currently here)
-Test case writing
-Development
-Testing
+- Planning (currently here)
+- Test case writing
+- Development
+- Testing
