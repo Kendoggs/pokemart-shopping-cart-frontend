@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import PokemonList from './PokemonList';
-import Pagination from './Pagination';
+import PokemonList from '../logic/PokemonList';
+import Pagination from '../logic/Pagination';
 import axios from "axios";
 
 function App() {
@@ -36,11 +36,11 @@ function App() {
 
   return (
     <>
-    <PokemonList pokemon={pokemon} />
-    <Pagination 
-      gotoNextPage={nextPageUrl ? gotoNextPage : null}
-      gotoPreviousPage={previousPageUrl ? gotoPreviousPage : null}
-    />
+      <PokemonList pokemon={pokemon} />
+      <Pagination
+        gotoNextPage={nextPageUrl ? gotoNextPage : null}
+        gotoPreviousPage={previousPageUrl ? gotoPreviousPage : null}
+      />
     </>
   );
 }
